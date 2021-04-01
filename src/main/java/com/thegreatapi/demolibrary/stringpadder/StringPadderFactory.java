@@ -5,12 +5,15 @@ package com.thegreatapi.demolibrary.stringpadder;
  */
 public final class StringPadderFactory {
 
+    private StringPadderFactory() {
+    }
+
     /**
      * Creates an instance of {@link StringPadder}.
      *
      * @return the new instance
      */
-    public StringPadder createStringPadder() {
+    public static StringPadder createStringPadder() {
         return new StringPadderImpl();
     }
 
