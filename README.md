@@ -14,7 +14,7 @@ Add the following dependency:
 ````XML
 <dependency>
     <groupId>com.thegreatapi.demolibrary</groupId>
-    <artifactId>api</artifactId>
+    <artifactId>demolibrary</artifactId>
     <version>${VERSION}</version>
 </dependency>
 ````
