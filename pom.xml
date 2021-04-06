@@ -6,7 +6,7 @@
 
     <groupId>com.thegreatapi.demolibrary</groupId>
     <artifactId>demolibrary</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
 
     <name>demolibrary</name>
     <description>
@@ -74,6 +74,9 @@
                                 </goals>
                             </execution>
                         </executions>
+                        <configuration>
+                            <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+                        </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -113,6 +116,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
@@ -123,6 +127,7 @@
             <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+
     <build>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
